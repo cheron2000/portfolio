@@ -118,7 +118,7 @@ section{padding:92px 0;border-top:1px solid #FFFFFF20}
 .contact .kicker{color:#F5D5D9}.contact h2,.contact p{color:#fff}.contact .btn.primary{background:#F5F2EB;color:#191F3A;border-color:#F5F2EB;position:relative;z-index:1}
 .footer{color:#B7BDD0}.footer .text-link{color:#E45A6D}
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}.reveal.is-visible{opacity:1;transform:translateY(0)}
-@media(max-width:760px){.wrap{width:min(100% - 32px,560px)}.hero{min-height:auto;padding:78px 0 80px}.hero:before{width:230px;height:230px;right:-80px;top:25%}.terminal{box-shadow:9px 9px 0 #B5122B}section{padding:65px 0}.project{min-height:215px}.contact{padding:30px}}
+@media(max-width:760px){.wrap{width:min(100% - 32px,560px)}.hero{min-height:auto;padding:78px 0 80px;grid-template-columns:1fr;gap:36px}.hero:before{width:230px;height:230px;right:-80px;top:25%}.hero-visual{width:min(82%,360px);margin:0 auto}.hero-visual-caption{font-size:8px}.terminal{box-shadow:9px 9px 0 #B5122B}section{padding:65px 0}.project{min-height:215px}.contact{padding:30px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
 
   </style>
@@ -131,12 +131,16 @@ section{padding:92px 0;border-top:1px solid #FFFFFF20}
   </header>
   <main id="home">
     <div class="wrap hero">
-      <div>
+      <div class="hero-copy">
         <div class="eyebrow">Engineer · Developer · Builder</div>
         <h1>Building things<br>that <span>work.</span></h1>
         <p class="intro">I'm Shreyash, a computer science engineering student focused on backend systems, applied AI, automation, and cybersecurity. I like understanding how things work under the hood — then building practical tools around that knowledge.</p>
         <div class="actions"><a class="btn primary" href="#work">Explore my work <span>↘</span></a><a class="btn" href="https://github.com/cheron2000" target="_blank" rel="noreferrer">GitHub ↗</a></div>
       </div>
+      <aside class="hero-visual" aria-label="Developer illustration">
+        <img class="developer-avatar" src="assets/developer-avatar.jpg" alt="Pixel-art developer avatar with AI assistant motif">
+        <div class="hero-visual-caption"><span>SHREYASH / DEVELOPER</span><span>BUILDING IN THE AI ERA</span></div>
+      </aside>
       <aside class="terminal" aria-label="Developer profile terminal">
         <div class="term-head"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="term-label">profile.sh</span></div>
         <div class="term-line"><span class="prompt">$</span> whoami</div><div class="term-line value">computer_science_student</div>
